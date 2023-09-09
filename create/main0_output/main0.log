@@ -1,0 +1,903 @@
+INFO|2023-09-09 12:16:45,933|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 12:16:52,638|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 12:17:17,990|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 12:17:18,001|pysph.solver.application|Generating output in D:\×²»÷Ä£Äâ·ÂÕæ\much_data\create\main0_output
+INFO|2023-09-09 12:17:18,096|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  asteroid: 14147
+  impactor: 7
+----------------------------------------------------------------------
+INFO|2023-09-09 12:17:18,097|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 12:17:18,097|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 12:17:18,097|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(asteroid=EulerStep3D(), impactor=EulerStep3D())
+----------------------------------------------------------------------
+INFO|2023-09-09 12:17:18,097|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+ExplosionByTime(dest='impactor', sources=None, time=0.01, dt=2e-05, e=100000.0),
+VelocityGradient3D(dest='impactor', sources=['asteroid', 'impactor']),
+VelocityGradient3D(dest='asteroid', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='impactor', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='asteroid', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='impactor', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='asteroid', sources=['asteroid', 'impactor']),
+EnergyEquationWithStress(dest='impactor', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+EnergyEquationWithStress(dest='asteroid', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+ROCK(dest='impactor', sources=None),
+ROCK(dest='asteroid', sources=None),
+TillotsonEOSWithPorosity(dest='impactor', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+TillotsonEOSWithPorosity(dest='asteroid', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+Porosity(dest='impactor', sources=None, alpha_0=1.25),
+Porosity(dest='asteroid', sources=None, alpha_0=1.25),
+MomentumEquation3D(dest='impactor', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquation3D(dest='asteroid', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquationByStress(dest='impactor', sources=['asteroid', 'impactor']),
+MomentumEquationByStress(dest='asteroid', sources=['asteroid', 'impactor'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2023-09-09 12:17:18,127|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2023-09-09 12:17:18,128|pysph.solver.application|Setup took: 0.14282 secs
+INFO|2023-09-09 12:17:18,128|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 2e-05
+INFO|2023-09-09 12:25:40,498|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 12:25:40,508|pysph.solver.application|Generating output in D:\×²»÷Ä£Äâ·ÂÕæ\much_data\create\main0_output
+INFO|2023-09-09 12:25:40,596|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  asteroid: 14147
+  impactor: 7
+----------------------------------------------------------------------
+INFO|2023-09-09 12:25:40,596|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 12:25:40,596|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 12:25:40,596|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(asteroid=EulerStep3D(), impactor=EulerStep3D())
+----------------------------------------------------------------------
+INFO|2023-09-09 12:25:40,597|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+ExplosionByTime(dest='impactor', sources=None, time=0.01, dt=2e-05, e=100000.0),
+VelocityGradient3D(dest='impactor', sources=['asteroid', 'impactor']),
+VelocityGradient3D(dest='asteroid', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='impactor', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='asteroid', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='impactor', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='asteroid', sources=['asteroid', 'impactor']),
+EnergyEquationWithStress(dest='impactor', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+EnergyEquationWithStress(dest='asteroid', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+ROCK(dest='impactor', sources=None),
+ROCK(dest='asteroid', sources=None),
+TillotsonEOSWithPorosity(dest='impactor', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+TillotsonEOSWithPorosity(dest='asteroid', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+Porosity(dest='impactor', sources=None, alpha_0=1.25),
+Porosity(dest='asteroid', sources=None, alpha_0=1.25),
+MomentumEquation3D(dest='impactor', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquation3D(dest='asteroid', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquationByStress(dest='impactor', sources=['asteroid', 'impactor']),
+MomentumEquationByStress(dest='asteroid', sources=['asteroid', 'impactor'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2023-09-09 12:25:40,621|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2023-09-09 12:25:40,621|pysph.solver.application|Setup took: 0.12817 secs
+INFO|2023-09-09 12:25:40,622|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 2e-05
+INFO|2023-09-09 12:38:00,449|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 12:38:23,511|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 12:38:23,521|pysph.solver.application|Generating output in D:\×²»÷Ä£Äâ·ÂÕæ\much_data\create\main0_output
+INFO|2023-09-09 12:38:23,624|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  asteroid: 14147
+  impactor: 7
+----------------------------------------------------------------------
+INFO|2023-09-09 12:38:23,624|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 12:38:23,624|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 12:38:23,624|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(asteroid=EulerStep3D(), impactor=EulerStep3D())
+----------------------------------------------------------------------
+INFO|2023-09-09 12:38:23,625|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+ExplosionByTime(dest='impactor', sources=None, time=0.01, dt=2e-05, e=100000.0),
+VelocityGradient3D(dest='impactor', sources=['asteroid', 'impactor']),
+VelocityGradient3D(dest='asteroid', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='impactor', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='asteroid', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='impactor', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='asteroid', sources=['asteroid', 'impactor']),
+EnergyEquationWithStress(dest='impactor', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+EnergyEquationWithStress(dest='asteroid', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+ROCK(dest='impactor', sources=None),
+ROCK(dest='asteroid', sources=None),
+TillotsonEOSWithPorosity(dest='impactor', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+TillotsonEOSWithPorosity(dest='asteroid', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+Porosity(dest='impactor', sources=None, alpha_0=1.25),
+Porosity(dest='asteroid', sources=None, alpha_0=1.25),
+MomentumEquation3D(dest='impactor', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquation3D(dest='asteroid', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquationByStress(dest='impactor', sources=['asteroid', 'impactor']),
+MomentumEquationByStress(dest='asteroid', sources=['asteroid', 'impactor'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2023-09-09 12:38:23,647|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2023-09-09 12:38:23,647|pysph.solver.application|Setup took: 0.14110 secs
+INFO|2023-09-09 12:38:23,647|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 2e-05
+INFO|2023-09-09 12:38:47,471|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 12:38:47,480|pysph.solver.application|Generating output in D:\×²»÷Ä£Äâ·ÂÕæ\much_data\create\main0_output
+INFO|2023-09-09 12:38:47,570|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  asteroid: 14147
+  impactor: 7
+----------------------------------------------------------------------
+INFO|2023-09-09 12:38:47,570|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 12:38:47,570|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 12:38:47,570|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(asteroid=EulerStep3D(), impactor=EulerStep3D())
+----------------------------------------------------------------------
+INFO|2023-09-09 12:38:47,571|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+ExplosionByTime(dest='impactor', sources=None, time=0.01, dt=2e-05, e=100000.0),
+VelocityGradient3D(dest='impactor', sources=['asteroid', 'impactor']),
+VelocityGradient3D(dest='asteroid', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='impactor', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='asteroid', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='impactor', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='asteroid', sources=['asteroid', 'impactor']),
+EnergyEquationWithStress(dest='impactor', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+EnergyEquationWithStress(dest='asteroid', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+ROCK(dest='impactor', sources=None),
+ROCK(dest='asteroid', sources=None),
+TillotsonEOSWithPorosity(dest='impactor', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+TillotsonEOSWithPorosity(dest='asteroid', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+Porosity(dest='impactor', sources=None, alpha_0=1.25),
+Porosity(dest='asteroid', sources=None, alpha_0=1.25),
+MomentumEquation3D(dest='impactor', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquation3D(dest='asteroid', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquationByStress(dest='impactor', sources=['asteroid', 'impactor']),
+MomentumEquationByStress(dest='asteroid', sources=['asteroid', 'impactor'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2023-09-09 12:38:47,594|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2023-09-09 12:38:47,594|pysph.solver.application|Setup took: 0.12658 secs
+INFO|2023-09-09 12:38:47,594|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 2e-05
+INFO|2023-09-09 12:40:53,868|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 12:40:53,880|pysph.solver.application|Generating output in D:\×²»÷Ä£Äâ·ÂÕæ\much_data\create\main0_output
+INFO|2023-09-09 12:40:53,986|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  asteroid: 709
+  impactor: 7
+----------------------------------------------------------------------
+INFO|2023-09-09 12:40:53,986|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 12:40:53,986|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 12:40:53,986|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(asteroid=EulerStep3D(), impactor=EulerStep3D())
+----------------------------------------------------------------------
+INFO|2023-09-09 12:40:53,987|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+ExplosionByTime(dest='impactor', sources=None, time=0.01, dt=2e-05, e=100000.0),
+VelocityGradient3D(dest='impactor', sources=['asteroid', 'impactor']),
+VelocityGradient3D(dest='asteroid', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='impactor', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='asteroid', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='impactor', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='asteroid', sources=['asteroid', 'impactor']),
+EnergyEquationWithStress(dest='impactor', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+EnergyEquationWithStress(dest='asteroid', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+ROCK(dest='impactor', sources=None),
+ROCK(dest='asteroid', sources=None),
+TillotsonEOSWithPorosity(dest='impactor', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+TillotsonEOSWithPorosity(dest='asteroid', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+Porosity(dest='impactor', sources=None, alpha_0=1.25),
+Porosity(dest='asteroid', sources=None, alpha_0=1.25),
+MomentumEquation3D(dest='impactor', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquation3D(dest='asteroid', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquationByStress(dest='impactor', sources=['asteroid', 'impactor']),
+MomentumEquationByStress(dest='asteroid', sources=['asteroid', 'impactor'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2023-09-09 12:40:54,009|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2023-09-09 12:40:54,009|pysph.solver.application|Setup took: 0.14736 secs
+INFO|2023-09-09 12:40:54,009|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 0.05
+INFO|2023-09-09 12:40:54,071|pysph.solver.solver|Writing output at time 1, iteration 20, dt = 0.05
+INFO|2023-09-09 12:40:54,074|pysph.solver.application|Run took: 0.06466 secs
+INFO|2023-09-09 12:41:05,133|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 12:41:05,136|pysph.solver.application|Generating output in D:\×²»÷Ä£Äâ·ÂÕæ\much_data\create\main0_output
+INFO|2023-09-09 12:41:05,226|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  asteroid: 709
+  impactor: 7
+----------------------------------------------------------------------
+INFO|2023-09-09 12:41:05,226|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 12:41:05,226|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 12:41:05,226|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(asteroid=EulerStep3D(), impactor=EulerStep3D())
+----------------------------------------------------------------------
+INFO|2023-09-09 12:41:05,227|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+ExplosionByTime(dest='impactor', sources=None, time=0.01, dt=2e-05, e=100000.0),
+VelocityGradient3D(dest='impactor', sources=['asteroid', 'impactor']),
+VelocityGradient3D(dest='asteroid', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='impactor', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='asteroid', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='impactor', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='asteroid', sources=['asteroid', 'impactor']),
+EnergyEquationWithStress(dest='impactor', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+EnergyEquationWithStress(dest='asteroid', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+ROCK(dest='impactor', sources=None),
+ROCK(dest='asteroid', sources=None),
+TillotsonEOSWithPorosity(dest='impactor', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+TillotsonEOSWithPorosity(dest='asteroid', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+Porosity(dest='impactor', sources=None, alpha_0=1.25),
+Porosity(dest='asteroid', sources=None, alpha_0=1.25),
+MomentumEquation3D(dest='impactor', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquation3D(dest='asteroid', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquationByStress(dest='impactor', sources=['asteroid', 'impactor']),
+MomentumEquationByStress(dest='asteroid', sources=['asteroid', 'impactor'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2023-09-09 12:41:05,249|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2023-09-09 12:41:05,249|pysph.solver.application|Setup took: 0.11978 secs
+INFO|2023-09-09 12:41:05,250|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 2e-05
+INFO|2023-09-09 12:41:05,436|pysph.solver.solver|Writing output at time 0.002, iteration 100, dt = 2e-05
+INFO|2023-09-09 12:41:05,601|pysph.solver.solver|Writing output at time 0.004, iteration 200, dt = 2e-05
+INFO|2023-09-09 12:41:05,755|pysph.solver.solver|Writing output at time 0.006, iteration 300, dt = 2e-05
+INFO|2023-09-09 12:41:05,909|pysph.solver.solver|Writing output at time 0.008, iteration 400, dt = 2e-05
+INFO|2023-09-09 12:41:06,061|pysph.solver.solver|Writing output at time 0.01, iteration 500, dt = 2e-05
+INFO|2023-09-09 12:41:06,217|pysph.solver.solver|Writing output at time 0.012, iteration 600, dt = 2e-05
+INFO|2023-09-09 12:41:06,369|pysph.solver.solver|Writing output at time 0.014, iteration 700, dt = 2e-05
+INFO|2023-09-09 12:41:06,520|pysph.solver.solver|Writing output at time 0.016, iteration 800, dt = 2e-05
+INFO|2023-09-09 12:41:06,673|pysph.solver.solver|Writing output at time 0.018, iteration 900, dt = 2e-05
+INFO|2023-09-09 12:41:06,828|pysph.solver.solver|Writing output at time 0.02, iteration 1000, dt = 2e-05
+INFO|2023-09-09 12:41:06,978|pysph.solver.solver|Writing output at time 0.022, iteration 1100, dt = 2e-05
+INFO|2023-09-09 12:41:07,131|pysph.solver.solver|Writing output at time 0.024, iteration 1200, dt = 2e-05
+INFO|2023-09-09 12:41:07,286|pysph.solver.solver|Writing output at time 0.026, iteration 1300, dt = 2e-05
+INFO|2023-09-09 12:41:07,438|pysph.solver.solver|Writing output at time 0.028, iteration 1400, dt = 2e-05
+INFO|2023-09-09 12:41:07,589|pysph.solver.solver|Writing output at time 0.03, iteration 1500, dt = 2e-05
+INFO|2023-09-09 12:41:07,741|pysph.solver.solver|Writing output at time 0.032, iteration 1600, dt = 2e-05
+INFO|2023-09-09 12:41:07,893|pysph.solver.solver|Writing output at time 0.034, iteration 1700, dt = 2e-05
+INFO|2023-09-09 12:41:08,044|pysph.solver.solver|Writing output at time 0.036, iteration 1800, dt = 2e-05
+INFO|2023-09-09 12:41:08,197|pysph.solver.solver|Writing output at time 0.038, iteration 1900, dt = 2e-05
+INFO|2023-09-09 12:41:08,349|pysph.solver.solver|Writing output at time 0.04, iteration 2000, dt = 2e-05
+INFO|2023-09-09 12:41:08,350|pysph.solver.application|Run took: 3.10050 secs
+INFO|2023-09-09 12:41:48,805|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 12:41:48,808|pysph.solver.application|Generating output in D:\×²»÷Ä£Äâ·ÂÕæ\much_data\create\main0_output
+INFO|2023-09-09 12:41:48,897|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  asteroid: 709
+  impactor: 7
+----------------------------------------------------------------------
+INFO|2023-09-09 12:41:48,897|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 12:41:48,897|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 12:41:48,897|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(asteroid=EulerStep3D(), impactor=EulerStep3D())
+----------------------------------------------------------------------
+INFO|2023-09-09 12:41:48,897|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+ExplosionByTime(dest='impactor', sources=None, time=0.01, dt=2e-05, e=100000.0),
+VelocityGradient3D(dest='impactor', sources=['asteroid', 'impactor']),
+VelocityGradient3D(dest='asteroid', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='impactor', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='asteroid', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='impactor', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='asteroid', sources=['asteroid', 'impactor']),
+EnergyEquationWithStress(dest='impactor', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+EnergyEquationWithStress(dest='asteroid', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+ROCK(dest='impactor', sources=None),
+ROCK(dest='asteroid', sources=None),
+TillotsonEOSWithPorosity(dest='impactor', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+TillotsonEOSWithPorosity(dest='asteroid', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+Porosity(dest='impactor', sources=None, alpha_0=1.25),
+Porosity(dest='asteroid', sources=None, alpha_0=1.25),
+MomentumEquation3D(dest='impactor', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquation3D(dest='asteroid', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquationByStress(dest='impactor', sources=['asteroid', 'impactor']),
+MomentumEquationByStress(dest='asteroid', sources=['asteroid', 'impactor'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2023-09-09 12:41:48,921|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2023-09-09 12:41:48,921|pysph.solver.application|Setup took: 0.12013 secs
+INFO|2023-09-09 12:41:48,921|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 2e-05
+INFO|2023-09-09 12:41:49,106|pysph.solver.solver|Writing output at time 0.002, iteration 100, dt = 2e-05
+INFO|2023-09-09 12:41:49,256|pysph.solver.solver|Writing output at time 0.004, iteration 200, dt = 2e-05
+INFO|2023-09-09 12:41:49,409|pysph.solver.solver|Writing output at time 0.006, iteration 300, dt = 2e-05
+INFO|2023-09-09 12:41:49,559|pysph.solver.solver|Writing output at time 0.008, iteration 400, dt = 2e-05
+INFO|2023-09-09 12:41:49,708|pysph.solver.solver|Writing output at time 0.01, iteration 500, dt = 2e-05
+INFO|2023-09-09 12:41:49,857|pysph.solver.solver|Writing output at time 0.012, iteration 600, dt = 2e-05
+INFO|2023-09-09 12:41:50,007|pysph.solver.solver|Writing output at time 0.014, iteration 700, dt = 2e-05
+INFO|2023-09-09 12:41:50,158|pysph.solver.solver|Writing output at time 0.016, iteration 800, dt = 2e-05
+INFO|2023-09-09 12:41:50,307|pysph.solver.solver|Writing output at time 0.018, iteration 900, dt = 2e-05
+INFO|2023-09-09 12:41:50,457|pysph.solver.solver|Writing output at time 0.02, iteration 1000, dt = 2e-05
+INFO|2023-09-09 12:41:50,606|pysph.solver.solver|Writing output at time 0.022, iteration 1100, dt = 2e-05
+INFO|2023-09-09 12:41:50,755|pysph.solver.solver|Writing output at time 0.024, iteration 1200, dt = 2e-05
+INFO|2023-09-09 12:41:50,906|pysph.solver.solver|Writing output at time 0.026, iteration 1300, dt = 2e-05
+INFO|2023-09-09 12:41:51,055|pysph.solver.solver|Writing output at time 0.028, iteration 1400, dt = 2e-05
+INFO|2023-09-09 12:41:51,206|pysph.solver.solver|Writing output at time 0.03, iteration 1500, dt = 2e-05
+INFO|2023-09-09 12:41:51,357|pysph.solver.solver|Writing output at time 0.032, iteration 1600, dt = 2e-05
+INFO|2023-09-09 12:41:51,507|pysph.solver.solver|Writing output at time 0.034, iteration 1700, dt = 2e-05
+INFO|2023-09-09 12:41:51,661|pysph.solver.solver|Writing output at time 0.036, iteration 1800, dt = 2e-05
+INFO|2023-09-09 12:41:51,809|pysph.solver.solver|Writing output at time 0.038, iteration 1900, dt = 2e-05
+INFO|2023-09-09 12:41:51,956|pysph.solver.solver|Writing output at time 0.04, iteration 2000, dt = 2e-05
+INFO|2023-09-09 12:41:51,957|pysph.solver.application|Run took: 3.03584 secs
+INFO|2023-09-09 12:41:58,219|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 12:41:58,221|pysph.solver.application|Generating output in D:\×²»÷Ä£Äâ·ÂÕæ\much_data\create\main1_output
+INFO|2023-09-09 12:41:58,303|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  asteroid: 709
+  impactor: 7
+----------------------------------------------------------------------
+INFO|2023-09-09 12:41:58,303|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 12:41:58,303|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 12:41:58,303|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(asteroid=EulerStep3D(), impactor=EulerStep3D())
+----------------------------------------------------------------------
+INFO|2023-09-09 12:41:58,304|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+ExplosionByTime(dest='impactor', sources=None, time=0.01, dt=2e-05, e=100000.0),
+VelocityGradient3D(dest='impactor', sources=['asteroid', 'impactor']),
+VelocityGradient3D(dest='asteroid', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='impactor', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='asteroid', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='impactor', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='asteroid', sources=['asteroid', 'impactor']),
+EnergyEquationWithStress(dest='impactor', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+EnergyEquationWithStress(dest='asteroid', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+ROCK(dest='impactor', sources=None),
+ROCK(dest='asteroid', sources=None),
+TillotsonEOSWithPorosity(dest='impactor', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+TillotsonEOSWithPorosity(dest='asteroid', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+Porosity(dest='impactor', sources=None, alpha_0=1.25),
+Porosity(dest='asteroid', sources=None, alpha_0=1.25),
+MomentumEquation3D(dest='impactor', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquation3D(dest='asteroid', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquationByStress(dest='impactor', sources=['asteroid', 'impactor']),
+MomentumEquationByStress(dest='asteroid', sources=['asteroid', 'impactor'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2023-09-09 12:41:58,304|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2023-09-09 12:41:58,305|pysph.solver.application|Setup took: 0.08601 secs
+INFO|2023-09-09 12:41:58,305|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 2e-05
+INFO|2023-09-09 12:41:58,510|pysph.solver.solver|Writing output at time 0.002, iteration 100, dt = 2e-05
+INFO|2023-09-09 12:41:58,665|pysph.solver.solver|Writing output at time 0.004, iteration 200, dt = 2e-05
+INFO|2023-09-09 12:41:58,820|pysph.solver.solver|Writing output at time 0.006, iteration 300, dt = 2e-05
+INFO|2023-09-09 12:41:58,988|pysph.solver.solver|Writing output at time 0.008, iteration 400, dt = 2e-05
+INFO|2023-09-09 12:41:59,140|pysph.solver.solver|Writing output at time 0.01, iteration 500, dt = 2e-05
+INFO|2023-09-09 12:41:59,298|pysph.solver.solver|Writing output at time 0.012, iteration 600, dt = 2e-05
+INFO|2023-09-09 12:41:59,451|pysph.solver.solver|Writing output at time 0.014, iteration 700, dt = 2e-05
+INFO|2023-09-09 12:41:59,604|pysph.solver.solver|Writing output at time 0.016, iteration 800, dt = 2e-05
+INFO|2023-09-09 12:41:59,755|pysph.solver.solver|Writing output at time 0.018, iteration 900, dt = 2e-05
+INFO|2023-09-09 12:41:59,906|pysph.solver.solver|Writing output at time 0.02, iteration 1000, dt = 2e-05
+INFO|2023-09-09 12:42:00,066|pysph.solver.solver|Writing output at time 0.022, iteration 1100, dt = 2e-05
+INFO|2023-09-09 12:42:00,216|pysph.solver.solver|Writing output at time 0.024, iteration 1200, dt = 2e-05
+INFO|2023-09-09 12:42:00,371|pysph.solver.solver|Writing output at time 0.026, iteration 1300, dt = 2e-05
+INFO|2023-09-09 12:42:00,528|pysph.solver.solver|Writing output at time 0.028, iteration 1400, dt = 2e-05
+INFO|2023-09-09 12:42:00,684|pysph.solver.solver|Writing output at time 0.03, iteration 1500, dt = 2e-05
+INFO|2023-09-09 12:42:00,837|pysph.solver.solver|Writing output at time 0.032, iteration 1600, dt = 2e-05
+INFO|2023-09-09 12:42:00,988|pysph.solver.solver|Writing output at time 0.034, iteration 1700, dt = 2e-05
+INFO|2023-09-09 12:42:01,140|pysph.solver.solver|Writing output at time 0.036, iteration 1800, dt = 2e-05
+INFO|2023-09-09 12:42:01,296|pysph.solver.solver|Writing output at time 0.038, iteration 1900, dt = 2e-05
+INFO|2023-09-09 12:42:01,447|pysph.solver.solver|Writing output at time 0.04, iteration 2000, dt = 2e-05
+INFO|2023-09-09 12:42:01,450|pysph.solver.application|Run took: 3.14537 secs
+INFO|2023-09-09 13:27:39,642|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 13:27:43,167|pysph.solver.application|Generating output in D:\×²»÷Ä£Äâ·ÂÕæ\much_data\create\main0_output
+INFO|2023-09-09 13:27:43,250|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  asteroid: 5600433
+  impactor: 492349
+----------------------------------------------------------------------
+INFO|2023-09-09 13:27:43,250|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 13:27:43,250|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 13:27:43,250|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(asteroid=EulerStep3D(), impactor=EulerStep3D())
+----------------------------------------------------------------------
+INFO|2023-09-09 13:27:43,251|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+ExplosionByTime(dest='impactor', sources=None, time=0.01, dt=2e-05, e=100000.0),
+VelocityGradient3D(dest='impactor', sources=['asteroid', 'impactor']),
+VelocityGradient3D(dest='asteroid', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='impactor', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='asteroid', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='impactor', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='asteroid', sources=['asteroid', 'impactor']),
+EnergyEquationWithStress(dest='impactor', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+EnergyEquationWithStress(dest='asteroid', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+ROCK(dest='impactor', sources=None),
+ROCK(dest='asteroid', sources=None),
+TillotsonEOSWithPorosity(dest='impactor', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+TillotsonEOSWithPorosity(dest='asteroid', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+Porosity(dest='impactor', sources=None, alpha_0=1.25),
+Porosity(dest='asteroid', sources=None, alpha_0=1.25),
+MomentumEquation3D(dest='impactor', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquation3D(dest='asteroid', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquationByStress(dest='impactor', sources=['asteroid', 'impactor']),
+MomentumEquationByStress(dest='asteroid', sources=['asteroid', 'impactor'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2023-09-09 13:27:43,287|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2023-09-09 13:27:43,287|pysph.solver.application|Setup took: 3.65084 secs
+INFO|2023-09-09 13:27:43,289|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 2e-05
+INFO|2023-09-09 13:28:59,158|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 13:28:59,167|pysph.solver.application|Generating output in D:\×²»÷Ä£Äâ·ÂÕæ\much_data\create\main0_output
+INFO|2023-09-09 13:28:59,260|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  asteroid: 14432
+  impactor: 257
+----------------------------------------------------------------------
+INFO|2023-09-09 13:28:59,260|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 13:28:59,260|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 13:28:59,260|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(asteroid=EulerStep3D(), impactor=EulerStep3D())
+----------------------------------------------------------------------
+INFO|2023-09-09 13:28:59,261|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+ExplosionByTime(dest='impactor', sources=None, time=0.01, dt=2e-05, e=100000.0),
+VelocityGradient3D(dest='impactor', sources=['asteroid', 'impactor']),
+VelocityGradient3D(dest='asteroid', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='impactor', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='asteroid', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='impactor', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='asteroid', sources=['asteroid', 'impactor']),
+EnergyEquationWithStress(dest='impactor', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+EnergyEquationWithStress(dest='asteroid', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+ROCK(dest='impactor', sources=None),
+ROCK(dest='asteroid', sources=None),
+TillotsonEOSWithPorosity(dest='impactor', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+TillotsonEOSWithPorosity(dest='asteroid', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+Porosity(dest='impactor', sources=None, alpha_0=1.25),
+Porosity(dest='asteroid', sources=None, alpha_0=1.25),
+MomentumEquation3D(dest='impactor', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquation3D(dest='asteroid', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquationByStress(dest='impactor', sources=['asteroid', 'impactor']),
+MomentumEquationByStress(dest='asteroid', sources=['asteroid', 'impactor'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2023-09-09 13:28:59,289|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2023-09-09 13:28:59,290|pysph.solver.application|Setup took: 0.13931 secs
+INFO|2023-09-09 13:28:59,290|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 2e-05
+INFO|2023-09-09 13:31:51,515|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 13:31:51,519|pysph.solver.application|Generating output in D:\×²»÷Ä£Äâ·ÂÕæ\much_data\create\main0_output
+INFO|2023-09-09 13:31:51,609|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  asteroid: 1845
+  impactor: 33
+----------------------------------------------------------------------
+INFO|2023-09-09 13:31:51,610|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 13:31:51,610|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 13:31:51,610|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(asteroid=EulerStep3D(), impactor=EulerStep3D())
+----------------------------------------------------------------------
+INFO|2023-09-09 13:31:51,610|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+ExplosionByTime(dest='impactor', sources=None, time=0.01, dt=2e-05, e=100000.0),
+VelocityGradient3D(dest='impactor', sources=['asteroid', 'impactor']),
+VelocityGradient3D(dest='asteroid', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='impactor', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='asteroid', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='impactor', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='asteroid', sources=['asteroid', 'impactor']),
+EnergyEquationWithStress(dest='impactor', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+EnergyEquationWithStress(dest='asteroid', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+ROCK(dest='impactor', sources=None),
+ROCK(dest='asteroid', sources=None),
+TillotsonEOSWithPorosity(dest='impactor', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+TillotsonEOSWithPorosity(dest='asteroid', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+Porosity(dest='impactor', sources=None, alpha_0=1.25),
+Porosity(dest='asteroid', sources=None, alpha_0=1.25),
+MomentumEquation3D(dest='impactor', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquation3D(dest='asteroid', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquationByStress(dest='impactor', sources=['asteroid', 'impactor']),
+MomentumEquationByStress(dest='asteroid', sources=['asteroid', 'impactor'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2023-09-09 13:31:51,634|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2023-09-09 13:31:51,634|pysph.solver.application|Setup took: 0.12393 secs
+INFO|2023-09-09 13:31:51,634|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 2e-05
+INFO|2023-09-09 13:32:07,739|pysph.solver.solver|Writing output at time 0.002, iteration 100, dt = 2e-05
+INFO|2023-09-09 13:32:23,661|pysph.solver.solver|Writing output at time 0.004, iteration 200, dt = 2e-05
+INFO|2023-09-09 13:35:08,502|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 13:35:08,510|pysph.solver.application|Generating output in D:\×²»÷Ä£Äâ·ÂÕæ\much_data\create\main0_output
+INFO|2023-09-09 13:35:08,598|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  asteroid: 11172
+  impactor: 56
+----------------------------------------------------------------------
+INFO|2023-09-09 13:35:08,598|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 13:35:08,599|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 13:35:08,599|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(asteroid=EulerStep3D(), impactor=EulerStep3D())
+----------------------------------------------------------------------
+INFO|2023-09-09 13:35:08,599|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+ExplosionByTime(dest='impactor', sources=None, time=0.01, dt=2e-05, e=100000.0),
+VelocityGradient3D(dest='impactor', sources=['asteroid', 'impactor']),
+VelocityGradient3D(dest='asteroid', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='impactor', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='asteroid', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='impactor', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='asteroid', sources=['asteroid', 'impactor']),
+EnergyEquationWithStress(dest='impactor', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+EnergyEquationWithStress(dest='asteroid', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+ROCK(dest='impactor', sources=None),
+ROCK(dest='asteroid', sources=None),
+TillotsonEOSWithPorosity(dest='impactor', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+TillotsonEOSWithPorosity(dest='asteroid', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+Porosity(dest='impactor', sources=None, alpha_0=1.25),
+Porosity(dest='asteroid', sources=None, alpha_0=1.25),
+MomentumEquation3D(dest='impactor', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquation3D(dest='asteroid', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquationByStress(dest='impactor', sources=['asteroid', 'impactor']),
+MomentumEquationByStress(dest='asteroid', sources=['asteroid', 'impactor'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2023-09-09 13:35:08,622|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2023-09-09 13:35:08,622|pysph.solver.application|Setup took: 0.12458 secs
+INFO|2023-09-09 13:35:08,623|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 2e-05
+INFO|2023-09-09 13:36:12,875|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 13:36:12,909|pysph.solver.application|Generating output in D:\×²»÷Ä£Äâ·ÂÕæ\much_data\create\main0_output
+INFO|2023-09-09 13:36:13,000|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  asteroid: 73732
+  impactor: 33
+----------------------------------------------------------------------
+INFO|2023-09-09 13:36:13,000|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 13:36:13,000|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 13:36:13,000|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(asteroid=EulerStep3D(), impactor=EulerStep3D())
+----------------------------------------------------------------------
+INFO|2023-09-09 13:36:13,000|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+ExplosionByTime(dest='impactor', sources=None, time=0.01, dt=2e-05, e=100000.0),
+VelocityGradient3D(dest='impactor', sources=['asteroid', 'impactor']),
+VelocityGradient3D(dest='asteroid', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='impactor', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='asteroid', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='impactor', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='asteroid', sources=['asteroid', 'impactor']),
+EnergyEquationWithStress(dest='impactor', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+EnergyEquationWithStress(dest='asteroid', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+ROCK(dest='impactor', sources=None),
+ROCK(dest='asteroid', sources=None),
+TillotsonEOSWithPorosity(dest='impactor', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+TillotsonEOSWithPorosity(dest='asteroid', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+Porosity(dest='impactor', sources=None, alpha_0=1.25),
+Porosity(dest='asteroid', sources=None, alpha_0=1.25),
+MomentumEquation3D(dest='impactor', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquation3D(dest='asteroid', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquationByStress(dest='impactor', sources=['asteroid', 'impactor']),
+MomentumEquationByStress(dest='asteroid', sources=['asteroid', 'impactor'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2023-09-09 13:36:13,024|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2023-09-09 13:36:13,024|pysph.solver.application|Setup took: 0.15416 secs
+INFO|2023-09-09 13:36:13,024|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 2e-05
+INFO|2023-09-09 13:51:21,183|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 13:51:21,227|pysph.solver.application|Generating output in D:\×²»÷Ä£Äâ·ÂÕæ\much_data\create\main0_output
+INFO|2023-09-09 13:51:21,346|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  asteroid: 98053
+  impactor: 503
+----------------------------------------------------------------------
+INFO|2023-09-09 13:51:21,346|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 13:51:21,346|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 13:51:21,346|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(asteroid=EulerStep3D(), impactor=EulerStep3D())
+----------------------------------------------------------------------
+INFO|2023-09-09 13:51:21,347|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+ExplosionByTime(dest='impactor', sources=None, time=0.01, dt=2e-05, e=100000.0),
+VelocityGradient3D(dest='impactor', sources=['asteroid', 'impactor']),
+VelocityGradient3D(dest='asteroid', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='impactor', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='asteroid', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='impactor', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='asteroid', sources=['asteroid', 'impactor']),
+EnergyEquationWithStress(dest='impactor', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+EnergyEquationWithStress(dest='asteroid', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+ROCK(dest='impactor', sources=None),
+ROCK(dest='asteroid', sources=None),
+TillotsonEOSWithPorosity(dest='impactor', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+TillotsonEOSWithPorosity(dest='asteroid', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+Porosity(dest='impactor', sources=None, alpha_0=1.25),
+Porosity(dest='asteroid', sources=None, alpha_0=1.25),
+MomentumEquation3D(dest='impactor', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquation3D(dest='asteroid', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquationByStress(dest='impactor', sources=['asteroid', 'impactor']),
+MomentumEquationByStress(dest='asteroid', sources=['asteroid', 'impactor'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2023-09-09 13:51:21,390|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2023-09-09 13:51:21,391|pysph.solver.application|Setup took: 0.21167 secs
+INFO|2023-09-09 13:51:21,391|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 2e-05
+INFO|2023-09-09 13:51:35,309|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 13:51:35,354|pysph.solver.application|Generating output in D:\×²»÷Ä£Äâ·ÂÕæ\much_data\create\main0_output
+INFO|2023-09-09 13:51:35,478|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  asteroid: 98053
+  impactor: 503
+----------------------------------------------------------------------
+INFO|2023-09-09 13:51:35,478|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 13:51:35,478|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 13:51:35,478|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(asteroid=EulerStep3D(), impactor=EulerStep3D())
+----------------------------------------------------------------------
+INFO|2023-09-09 13:51:35,478|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+ExplosionByTime(dest='impactor', sources=None, time=0.01, dt=2e-05, e=100000.0),
+VelocityGradient3D(dest='impactor', sources=['asteroid', 'impactor']),
+VelocityGradient3D(dest='asteroid', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='impactor', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='asteroid', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='impactor', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='asteroid', sources=['asteroid', 'impactor']),
+EnergyEquationWithStress(dest='impactor', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+EnergyEquationWithStress(dest='asteroid', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+ROCK(dest='impactor', sources=None),
+ROCK(dest='asteroid', sources=None),
+TillotsonEOSWithPorosity(dest='impactor', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+TillotsonEOSWithPorosity(dest='asteroid', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+Porosity(dest='impactor', sources=None, alpha_0=1.25),
+Porosity(dest='asteroid', sources=None, alpha_0=1.25),
+MomentumEquation3D(dest='impactor', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquation3D(dest='asteroid', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquationByStress(dest='impactor', sources=['asteroid', 'impactor']),
+MomentumEquationByStress(dest='asteroid', sources=['asteroid', 'impactor'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2023-09-09 13:51:35,517|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2023-09-09 13:51:35,517|pysph.solver.application|Setup took: 0.21155 secs
+INFO|2023-09-09 13:51:35,518|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 2e-05
+INFO|2023-09-09 13:51:53,357|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 13:51:53,393|pysph.solver.application|Generating output in D:\×²»÷Ä£Äâ·ÂÕæ\much_data\create\main0_output
+INFO|2023-09-09 13:51:53,518|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  asteroid: 73853
+  impactor: 503
+----------------------------------------------------------------------
+INFO|2023-09-09 13:51:53,518|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 13:51:53,518|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 13:51:53,518|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(asteroid=EulerStep3D(), impactor=EulerStep3D())
+----------------------------------------------------------------------
+INFO|2023-09-09 13:51:53,519|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+ExplosionByTime(dest='impactor', sources=None, time=0.01, dt=2e-05, e=100000.0),
+VelocityGradient3D(dest='impactor', sources=['asteroid', 'impactor']),
+VelocityGradient3D(dest='asteroid', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='impactor', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='asteroid', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='impactor', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='asteroid', sources=['asteroid', 'impactor']),
+EnergyEquationWithStress(dest='impactor', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+EnergyEquationWithStress(dest='asteroid', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+ROCK(dest='impactor', sources=None),
+ROCK(dest='asteroid', sources=None),
+TillotsonEOSWithPorosity(dest='impactor', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+TillotsonEOSWithPorosity(dest='asteroid', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+Porosity(dest='impactor', sources=None, alpha_0=1.25),
+Porosity(dest='asteroid', sources=None, alpha_0=1.25),
+MomentumEquation3D(dest='impactor', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquation3D(dest='asteroid', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquationByStress(dest='impactor', sources=['asteroid', 'impactor']),
+MomentumEquationByStress(dest='asteroid', sources=['asteroid', 'impactor'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2023-09-09 13:51:53,556|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2023-09-09 13:51:53,556|pysph.solver.application|Setup took: 0.20480 secs
+INFO|2023-09-09 13:51:53,557|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 2e-05
+INFO|2023-09-09 13:52:41,585|pysph.solver.application|Running on zhuanghaoyu with address 172.20.55.184
+INFO|2023-09-09 13:52:41,998|pysph.solver.application|Generating output in D:\×²»÷Ä£Äâ·ÂÕæ\much_data\create\main0_output
+INFO|2023-09-09 13:52:42,117|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  asteroid: 703273
+  impactor: 515
+----------------------------------------------------------------------
+INFO|2023-09-09 13:52:42,117|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 13:52:42,117|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=3)
+----------------------------------------------------------------------
+INFO|2023-09-09 13:52:42,117|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(asteroid=EulerStep3D(), impactor=EulerStep3D())
+----------------------------------------------------------------------
+INFO|2023-09-09 13:52:42,118|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+ExplosionByTime(dest='impactor', sources=None, time=0.01, dt=2e-05, e=100000.0),
+VelocityGradient3D(dest='impactor', sources=['asteroid', 'impactor']),
+VelocityGradient3D(dest='asteroid', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='impactor', sources=['asteroid', 'impactor']),
+HookesDeviatoricStressRate(dest='asteroid', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='impactor', sources=['asteroid', 'impactor']),
+ContinuityEquation(dest='asteroid', sources=['asteroid', 'impactor']),
+EnergyEquationWithStress(dest='impactor', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+EnergyEquationWithStress(dest='asteroid', sources=['asteroid', 'impactor'], alpha=1.5, beta=3.0, eta=0.01),
+ROCK(dest='impactor', sources=None),
+ROCK(dest='asteroid', sources=None),
+TillotsonEOSWithPorosity(dest='impactor', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+TillotsonEOSWithPorosity(dest='asteroid', sources=None, rho0=2700, us=3500000.0, a=0.5, b=1.3, e0=16000000.0, A=18000000000.0, B=18000000000.0, us_=18000000.0, alpha=5.0, beta=5.0, c0=3000.0, cv=790.0, p_e=200000000.0, p_t=68000000.0, p_s=2000000000.0, alpha_0=1.25, alpha_e=1.25, alpha_t=1.9, n1=12.0, n2=3.0, crushcurve_style=0),
+Porosity(dest='impactor', sources=None, alpha_0=1.25),
+Porosity(dest='asteroid', sources=None, alpha_0=1.25),
+MomentumEquation3D(dest='impactor', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquation3D(dest='asteroid', sources=['asteroid', 'impactor'], c0=3000.0, alpha=1.5, beta=3.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+MomentumEquationByStress(dest='impactor', sources=['asteroid', 'impactor']),
+MomentumEquationByStress(dest='asteroid', sources=['asteroid', 'impactor'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2023-09-09 13:52:42,161|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2023-09-09 13:52:42,161|pysph.solver.application|Setup took: 0.58085 secs
+INFO|2023-09-09 13:52:42,162|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 2e-05
